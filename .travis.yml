@@ -7,5 +7,7 @@ compiler:
 script:
   - make 
   - chmod +x main
-  - ./main
   
+after_script:
+- ./main
+
