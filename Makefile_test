@@ -1,0 +1,3 @@
+functions-test: functions.c test-functions.c
+		gcc -Wall -o ../bin/test-functions functions.c test-functions.c -lm -lcheck
+	
