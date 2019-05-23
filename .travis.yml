@@ -10,7 +10,7 @@ compiler:
 #before_install:
 install:
   #- sudo apt-get install check
-  - sudo brew install check 
+  - brew install check 
   
 script:
   #- make -C src 
