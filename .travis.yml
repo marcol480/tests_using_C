@@ -4,5 +4,6 @@ compiler:
   gcc
       
 script:
-  ./bin/test-functions
+  .bin/main
+  
   
