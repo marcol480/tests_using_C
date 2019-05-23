@@ -37,5 +37,5 @@ int main(void)
     nf = srunner_ntests_failed(sr);
     srunner_free(sr);
 
-    return nf == 0 ? 0 : 1;
+    return nf;
 }
