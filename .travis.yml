@@ -3,12 +3,9 @@ language: c
 compiler:
   gcc
       
-      before_install:
-
-script:
+before_install:
   - chmod +x bin/main
+
+script:  
   - bin/main
-  
- 
-  
   
