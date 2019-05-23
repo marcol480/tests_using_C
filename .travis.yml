@@ -5,9 +5,9 @@ compiler:
       
 #before_install:
 script:
+  - cd bin
   - make 
-  - chmod +x bin/main
+  - chmod +x main
   
 after_script:
 - ./bin/main
-
