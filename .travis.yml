@@ -4,6 +4,9 @@ compiler:
   gcc
       
 #before_install:
+install:
+  - sudo apt-get install check
+  
 script:
   #- make -C src 
   - make -C src -f Makefile_test
