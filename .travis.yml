@@ -1,27 +1,18 @@
 language: c
 
 os:
-#  - linux
   - osx
 
 compiler:
   gcc
-      
-#before_install:
+
 install:
-  #- sudo apt-get install check
   - brew install check 
   
 script:
-  #- make -C src 
   - checkmk src/test-functions.check > src/test-functions.c
   - make -C src -f Makefile_test
   - chmod +x bin/test-functions
-  #- checkmk test-functions.check > test-functions.c
-  #- make -f Makefile_test
-  #- chmod +x test-functions
 
-  
 after_script:
 - ./bin/test-functions
-#- ./test-functions
