@@ -8,7 +8,13 @@ compiler:
 
 install:
   - brew install check 
-  
+
+addons:
+  sonarcloud:
+    organization: "marcol480-github" # the key of the org you chose at step #3
+    token:
+      secure: c509f442f9360d4298e49e12c29120d7b14cee5b # encrypted value of your token
+
 script:
   - checkmk src/test-functions.check > src/test-functions.c
   - make -C src -f Makefile_test
