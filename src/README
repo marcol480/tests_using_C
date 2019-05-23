@@ -1,0 +1,30 @@
+%%%% To compile the main:
+make
+
+%%%% To compile the test file:
+make -f Makefile_test
+
+%%%% Run the awk script:
+checkmk test-functions.check > test-functions.c
+
+%%%% Reference for Ctests
+https://stackoverflow.com/questions/14176180/is-there-a-more-basic-tutorial-for-the-c-unit-testing-framework-check
+
+
+%%% TO PUSH ON GITHUB
+%%% first create a test 
+echo "# test_with_C" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/marcol480/test_with_C.git
+git push -u origin master
+
+
+
+
+
+
+
+
+

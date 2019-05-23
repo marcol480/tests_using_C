@@ -1,0 +1,20 @@
+#include "functions.h"
+#include <check.h>
+
+
+void exchange(int * a, int * b){
+  int tmp;
+  tmp = *a;
+  *a = *b;
+  *b = tmp;
+}
+
+int sum(int * a, int * b){
+
+  return *a+*b;
+  
+}
+
+
+
+
