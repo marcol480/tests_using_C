@@ -5,7 +5,7 @@ compiler:
       
 #before_install:
 script:
-  - make 
+  - src/make 
   - chmod +x bin/main
   - bin/main
   
