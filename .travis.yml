@@ -10,6 +10,7 @@ install:
 script:
   #- make -C src 
   - make -C src -f Makefile_test
+  - checkmk src/test-functions.check > src/test-functions.c
   - chmod +x bin/test-functions
   
 after_script:
