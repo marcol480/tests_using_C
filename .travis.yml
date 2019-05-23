@@ -14,14 +14,14 @@ install:
   
 script:
   #- make -C src 
-  #- checkmk src/test-functions.check > src/test-functions.c
-  #- make -C src -f Makefile_test
-  #- chmod +x bin/test-functions
-  - checkmk test-functions.check > test-functions.c
-  - make -f Makefile_test
-  - chmod +x test-functions
+  - checkmk src/test-functions.check > src/test-functions.c
+  - make -C src -f Makefile_test
+  - chmod +x bin/test-functions
+  #- checkmk test-functions.check > test-functions.c
+  #- make -f Makefile_test
+  #- chmod +x test-functions
 
   
 after_script:
-#- ./bin/test-functions
-- ./test-functions
+- ./bin/test-functions
+#- ./test-functions
