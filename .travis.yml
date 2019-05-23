@@ -6,8 +6,8 @@ compiler:
 #before_install:
 script:
   - make 
-  - chmod +x main
+  - chmod +x bin/main
   
 after_script:
-- ./main
+- ./bin/main
 
