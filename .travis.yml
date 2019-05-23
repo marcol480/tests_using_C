@@ -5,8 +5,9 @@ compiler:
       
 #before_install:
 script:
-  - make -C src 
-  - chmod +x bin/main
+  #- make -C src 
+  - make -C src -f Makefile_test
+  - chmod +x bin/test-functions
   
 after_script:
-- ./bin/main
+- ./bin/test-functions
