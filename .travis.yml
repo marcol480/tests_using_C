@@ -15,6 +15,7 @@ addons:
 
 install:
   - brew install check 
+  - brew install gsl
 
 script:
   - checkmk src/test-functions.check > src/test-functions.c
